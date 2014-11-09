@@ -1,0 +1,112 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme{classic}       %{banking}
+\moderncvcolor{blue}     
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.1cm, bottom=1.1cm, left=1.6cm, right=1.5cm]{geometry}
+\usepackage[ampersand]{easylist}
+\usepackage{amssymb}
+\ListProperties(Hide=100, Hang=true, Progressive=3.15ex, Style*=-- ,
+Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )
+% ...
+\usepackage{enumitem}
+%***************************************
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{book,misc}{{Books},{Others}}
+
+%***************************************
+
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+\firstname{\LARGE{JULIO ALEXANDER}}
+\familyname{\LARGE{AGUILAR ANGULO}}
+\title{Enseignant Chercheur}              
+%\title{Analog   +   Embedded Designer}              
+\address{addresse}{Code Ville Pays}    
+\email{juloaguilar@gmail.com}                      
+%\homepage{www.xxx.com}
+\photo[65pt]{photo_exemple.png}                     
+\mobile{nro telephone} 
+\extrainfo{âge}% -- Permis B}
+\begin{document}
+\maketitle
+%\newline{}
+\vspace*{-1.25cm}
+\section{Compétences}
+\cvitem{Liste1}{A,B,C, ...}
+\cvitem{\small{Liste2}}{ A,B,C,D ...}
+\cvitem{\scriptsize{Liste3}}{ A,B,C,D ...}
+\cvitem{\scriptsize{Liste4}}{ A,B,C,D ...}
+%\cvitem{Autres}{Outils de bureautique, d'édition d'images et de sons.}
+\section{Formations}
+\cventry{début -- fin}{Poste-activité}{\newline Institution}{\newline Ligne1}{}{Ligne3}
+\cventry{début -- fin}{Poste-activité}{\newline Institution}{\newline Ligne1}{Ligne2}{Ligne3}
+
+
+\section{Expériences Professionnelles}
+\cventry{début -- fin}{Poste-activité}{\newline Institution}{\newline Ligne1}{Ligne2}{Ligne3}
+\cventry{début -- fin}{Poste-activité}{\newline Institution}{\newline Ligne1}{Ligne2}{Ligne3}
+
+\section{Enseignement}
+\cventry{début -- fin}{Poste-activité}{\newline Institution}{\newline Ligne1}{Ligne2}{Ligne3}
+
+\vspace{-0.55cm}
+\begin{itemize}[leftmargin=3cm]
+%  \setlength{\itemindent}{1cm}
+\renewcommand{\labelitemi}{$\star$}
+\item \scriptsize Année: mission \textbf{[hrs]}, mission \textbf{[hrs]}.  Classe.
+\vspace{-0.125cm}
+\item \scriptsize Année: mission \textbf{[hrs]}, mission \textbf{[hrs]}.  Classe.
+\vspace{-0.125cm}
+\item \scriptsize Année: mission \textbf{[hrs]}, mission \textbf{[hrs]}.  Classe.
+\vspace{-0.125cm}
+\item \scriptsize Année: mission \textbf{[hrs]}, mission \textbf{[hrs]}.  Classe.
+\end{itemize}
+%\vspace{0.5cm}
+\cventry{début -fin}{Activité avec plusieurs projets}{\small{Institution}}{}{}{}{}%Co-encadrement de projets étudiants d'électronique ($1^{ère}$-$5^{éme}$ Année). }
+\vspace{-0.55cm}
+\begin{itemize}[leftmargin=3cm]
+%  \setlength{\itemindent}{1cm}
+\renewcommand{\labelitemi}{$\star$}
+\item \scriptsize début-fin: Projet 1.
+\newline Thématiques \textbf{(activité)}: 
+\vspace{-0.25cm}
+\begin{itemize}[leftmargin=0.5cm]
+\item \scriptsize thématique1
+\vspace{-0.125cm}
+\item \scriptsize thématique2
+\end{itemize}
+\vspace{-0.25cm}
+Thématiques \textbf{(Participation)}:
+\vspace{-0.25cm}
+\begin{itemize}[leftmargin=0.5cm]
+\item \scriptsize projet1
+\vspace{-0.125cm}
+\item \scriptsize projet2
+\end{itemize}
+
+\end{itemize}
+
+\section{Langues}
+\cvitem{Langue1}{niveau}
+\vspace{-0.125cm}
+\cvitem{Langue2}{niveau}
+\vspace{-0.125cm}
+\cvitem{Langue3}{niveau}
+\vspace{-0.125cm}
+\cvitem{Langue4}{niveau}
+
+\section{Publications}
+\hspace{3cm}Voici un exemple d'utilisation de bibtex sur un cv:
+\nocite{*}
+\bibliographystyle{plain}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\renewcommand{\refname}{}
+ \bibliography{publications_model}                        % 'publications' is the name of a BibTeX file
+\end{document}
